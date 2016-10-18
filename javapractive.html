@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>java</title>
+      <style>
+#circle{
+  height: 200px;
+   width: 200px;
+    background-color: red;
+     border-radius: 100%;
+
+}
+      </style>
+
+  </head>
+  <body>
+
+    <button id="press">Press Me</button>
+
+      <button id="append">append</button>
+
+        <button id="add">Press Me</button>
+
+    <h1 id="title">Hello</h1>
+
+<div id="test">hello to you </div>
+
+<div id="empty" style= "color: blue; font-weight:" > </div>
+
+<div id="circle">TOOO</div>
+
+  </body>
+
+
+
+  <script type="text/javascript">
+
+  document.getElementById("add").onclick=function() {
+    document.getElementById("empty").innerHTML="<ul><li>1</li><li>2</li><li>3</li></ul>";
+
+  };
+
+
+  document.getElementById("press").onclick=function() {
+    document.getElementById("title").innerHTML="...damn";
+ };
+
+document.getElementById("append").onclick=function() {
+
+  document.getElementById("test").innerHTML=document.getElementById("test").innerHTML + "<div id='circle'></div>";
+};
+document.getElementById("circle").onclick=function(){
+  document.getElementById("circle").style.display="none";
+
+}
+
+
+  </script>
+</html>
