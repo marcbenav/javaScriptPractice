@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arrays</title>
+  </head>
+<style>
+#red{
+  height: 200px;
+  width: 200px;
+  background-color: #E4E4E3;
+  align-content: center;
+}
+</style>
+  <body>
+
+    <div id="firstDiv">Hello</div>
+    <button id="changer">add array</button>
+
+
+    <script type="text/javascript">
+
+
+      myArray=[ "chicken", "<div id='red'>hello</div>", "rain"];
+      console.log(myArray)
+      // will add item to end of Array
+      myArray.push("food");
+
+      // will remove items starting at given index (index, number of items to remove, what we want to add)
+      myArray.splice(0, 0, "cheese","fish");
+      // //will remove items starting at given index (index, number of items to remove)
+
+      myArray.splice(0, 1);
+
+      console.log(myArray.length);
+
+      document.getElementById("changer").onclick=function(){
+      document.getElementById("firstDiv").innerHTML=myArray;
+    // document.getElementById("firstDiv").innerHTML=myArray[1];
+    // document.getElementById("firstDiv").innerHTML=myArray[2];
+  };
+
+
+    </script>
+
+  </body>
+</html>

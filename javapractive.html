@@ -14,6 +14,13 @@
   border-radius: 100%;
   float: left;
 }
+#blu{
+  height: 200px;
+  width: 200px;
+  background-color: #D4D4D4;
+  border-radius: 100%;
+  float: left;
+}
     </style>
   </head>
 <body>
@@ -26,8 +33,8 @@
       <h1 id="title">Hello</h1>
 
       <div id="empty"></div>
+      <div id="blu"></div>
 
-      <div id="circle"></div>
       <div id="test"></div>
 
       <input id="change" type="text" placeholder="write something"/>
@@ -40,18 +47,19 @@
 var newText=("change").value;
 var newCircle="<div id='circle'></div>";
 var circle="circle";
-
+var first="blu";
 
 
   document.getElementById("add").onclick=function() {
 
-  newText=document.getElementById("change").value;
+    newText=document.getElementById("change").value;
 
-  document.getElementById("empty").innerHTML=newText;
-  document.getElementById("change").placeholder="Thanks for your feedback";
-  document.getElementById("change").value="";
-  document.getElementById(circle).style.display="none"
-  document.getElementById("title").innerHTML="Goodbye"
+      document.getElementById("empty").innerHTML=newText;
+        document.getElementById("change").placeholder="Thanks for your feedback";
+          document.getElementById("change").value="";
+            // document.getElementById(circle).style.display=;
+              document.getElementById("title").innerHTML="Goodbye";
+                document.getElementById(circle).style.display=newCirclen;
   };
 
 
@@ -67,6 +75,7 @@ document.getElementById("append").onclick=function() {
 document.getElementById(circle).onclick=function(){
   document.getElementById(circle).style.display="none";
 };
+
 
   </script>
 </html>
