@@ -3,23 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>java</title>
-      <style>
+
+
+    <style>
+
 #circle{
   height: 200px;
-   width: 200px;
-    background-color: #D4D;
-     border-radius: 100%;
-     float: left;
-
+  width: 200px;
+  background-color: #D4D;
+  border-radius: 100%;
+  float: left;
 }
-      </style>
-
+    </style>
   </head>
-  <body>
-  <button id="append">Create circle</button>
-  <button id="press">Change Text</button>
+<body>
 
-  <button id="add">Submit</button>
+
+    <button id="append">Create circle</button>
+    <button id="press">Change Text</button>
+    <button id="add">Submit</button>
 
       <h1 id="title">Hello</h1>
 
@@ -28,10 +30,10 @@
       <div id="circle"></div>
       <div id="test"></div>
 
+      <input id="change" type="text" placeholder="write something"/>
 
-<input id="change" type="text" placeholder="hello" />
+</body>
 
-  </body>
 
   <script type="text/javascript">
 
@@ -41,12 +43,15 @@ var circle="circle";
 
 
 
-    document.getElementById("add").onclick=function() {
+  document.getElementById("add").onclick=function() {
 
-    newText=document.getElementById("change").value;
+  newText=document.getElementById("change").value;
 
-    document.getElementById("empty").innerHTML=newText;
-
+  document.getElementById("empty").innerHTML=newText;
+  document.getElementById("change").placeholder="Thanks for your feedback";
+  document.getElementById("change").value="";
+  document.getElementById(circle).style.display="none"
+  document.getElementById("title").innerHTML="Goodbye"
   };
 
 
@@ -55,15 +60,13 @@ var circle="circle";
  };
 
 document.getElementById("append").onclick=function() {
-  document.getElementById("test").innerHTML=document.getElementById("test").innerHTML + "<div id='circle'></div>";
+  document.getElementById("test").innerHTML=newCircle;
 };
 
 
 document.getElementById(circle).onclick=function(){
   document.getElementById(circle).style.display="none";
-
 };
-
 
   </script>
 </html>
