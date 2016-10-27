@@ -8,11 +8,12 @@
 #red{
   height: 200px;
   width: 200px;
-  background-color: #E4E4E3;
+  background-color: #F4F4f4;
   align-content: center;
 }
 </style>
   <body>
+
 
     <div id="firstDiv">Hello</div>
     <button id="changer">add array</button>
@@ -27,15 +28,15 @@
       myArray.push("food");
 
       // will remove items starting at given index (index, number of items to remove, what we want to add)
-      myArray.splice(0, 0, "cheese","fish");
+      myArray.splice(0, 0, "cheese","fish", "cats");
       // //will remove items starting at given index (index, number of items to remove)
 
-      myArray.splice(0, 1);
+      myArray.splice(0, 0);
 
       console.log(myArray.length);
 
       document.getElementById("changer").onclick=function(){
-      document.getElementById("firstDiv").innerHTML=myArray;
+      document.getElementById("firstDiv").innerHTML=myArray + " ";
     // document.getElementById("firstDiv").innerHTML=myArray[1];
     // document.getElementById("firstDiv").innerHTML=myArray[2];
   };

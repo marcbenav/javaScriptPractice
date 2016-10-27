@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>While Loops</title>
+  </head>
+  <body>
+    <p>How many fingers are you holding up</p>
+<button id="submit">Push</button>
+<input id="info" type="text" />
+<div id="test"></div>
+
+
+<script type="text/javascript">
+
+arrayOne=["pizza", "chicken", "pop"]
+arrayTwo=[]
+var i=0;
+
+
+document.getElementById("submit").onclick=function(){
+
+  while (i<arrayOne.length){
+
+
+arrayTwo=arrayTwo+arrayOne[i]+" ";
+i++;
+
+document.getElementById("test").innerHTML=arrayTwo;
+
+  }
+
+  alert(arrayTwo);
+};
+
+    </script>
+  </body>
+</html>

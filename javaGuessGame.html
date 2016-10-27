@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Guess Game</title>
+  </head>
+  <body>
+
+<p>Guess the number I am thinking of?</p>
+<button id="push">press</button>
+
+<input id="in" type="text" />
+
+
+<script type="text/javascript">
+
+
+
+
+document.getElementById("push").onclick=function(){
+
+  var y=Math.random();
+  y=6*y;
+  y=Math.floor(y);
+
+  if (document.getElementById("in").value==y){
+
+  alert("Congrats! you guessed that my number was " + y);
+
+  } else {
+    alert("Better luck next time. My number was " + y);
+    console.log(y)
+
+  }
+};
+
+
+</script>
+
+
+
+
+  </body>
+</html>

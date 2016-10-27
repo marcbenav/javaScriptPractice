@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+<style>
+#red{
+  color: red;
+  font-size: 24px;
+}
+#blue{
+  background: blue;
+  height: 100px;
+  width: 100px;
+
+}
+
+</style>
+  </head>
+
+  <body>
+<button id="submit">press me</button>
+<input id="info" type="text" />
+
+<div id="blue"></div>
+<div id="test"></div>
+
+<script type="text/javascript">
+
+document.getElementById("submit").onclick=function(){
+
+    if (document.getElementById("info").value=="hot"){
+
+        alert("It's a hot one!");
+
+    } else {
+
+        alert("Alright!!")
+
+    };
+
+};
+
+
+
+myArray=["fish", "chips"]
+
+console.log(myArray)
+
+var boolean = myArray.includes("fish", 0)
+console.log(boolean)
+
+
+
+if (boolean==true){
+  myArray.push("cat");
+
+  {    alert("false")
+  }
+  {
+    document.getElementById("test").innerHTML="<h1 id='red'>hello</h1>"
+  }
+};
+
+
+  console.log(myArray)
+
+  var x=1;
+
+  if (x==2){
+
+  alert("Equal!")
+
+  } else {
+
+  alert("Not Equal!")
+
+};
+
+
+
+    </script>
+  </body>
+</html>
